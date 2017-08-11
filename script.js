@@ -111,13 +111,44 @@ switch (job) {
         console.log('Scott does something else');
            }
 
-*/
 
+*/
 //Coding Challenge 1
 
 
+var heightChris = 175; //for this game, the variables have to be set to clearly define them.
+var heightScott = 182;
+var ageChris = 39;
+var ageScott = 41;
 
+var scoreChris = heightChris + 5 * ageChris; // to calculate the score we have created a var of scoreName.
+var scoreScott = heightScott + 5 * ageScott; //Take note of the calculation
+/*
+if (scoreChris > scoreScott) {
+    console.log('Chris wins the game with ' + scoreChris + ' points!');
+} else if (scoreScott > scoreChris) {
+    console.log('Scott wins the game with ' + scoreScott + ' points!');
+} else {
+    console.log('There is a draw!');
+}
 
+*/
 
+var heightMerelice = 162;
+var ageMerelice = 41;
+var scoreMerelice = heightMerelice + 5 * ageMerelice;
 
+if (scoreChris > scoreScott && scoreChris > scoreMerelice) {
+    console.loge('Chris wins the game with ' + scoreChris + ' points!');
 
+} else if (scoreScott > scoreChris && scoreScott > scoreMerelice) {
+    console.log('Scott wins the game with ' + scoreScott + ' points!');
+
+} else if (scoreMerelice > scoreChris && scoreMerelice > scoreScott) {
+    console.log('Merelice wins the game with ' + scoreMerelice + ' points!');
+
+} else {
+    console.log('It\'s a draw.');
+}
+
+//Take note of how to do the calculation of the third party versus only that of two players.
