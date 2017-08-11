@@ -67,15 +67,17 @@ if(isMarried) {
     console.log('No!');
 }
 
-*/
+
 
 //Lecture Boolean logic and switch
 
 
-var age = 16;
+var age = 25;
 
 if (age <= 19) {
     console.log('John is a teenager');
+} else if (age > 20 && age < 30) {
+    console.log('John is a young Man')
 } else {
     console.log('John is a man')
 }
@@ -83,15 +85,35 @@ if (age <= 19) {
 var age = 41;
 
 if (age <= 19) {
-    console.log('Scot is a teenager');
+    console.log('Scott is a teenager');
+} else if (age > 30 && age < 60) {
+    console.log('Scott is a man')
 } else {
     console.log('Scott is a man')
 }
 
 
+var job = 'technician';
 
+job = prompt('What does Scott do?');
 
+switch (job) {
+    case 'technician':
+        console.log('Scott services refrigeration equipment.');
+        break;
+    case 'teacher':
+        console.log('Scott teaches new technicians.');
+        break;
+    case 'superhero':
+        console.log('Scottcfights crime with refrigeraion powers');
+        break;
+    default:
+        console.log('Scott does something else');
+           }
 
+*/
+
+//Coding Challenge 1
 
 
 
