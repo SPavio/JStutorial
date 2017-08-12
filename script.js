@@ -112,7 +112,7 @@ switch (job) {
            }
 
 
-*/
+
 //Coding Challenge 1
 
 
@@ -123,7 +123,7 @@ var ageScott = 41;
 
 var scoreChris = heightChris + 5 * ageChris; // to calculate the score we have created a var of scoreName.
 var scoreScott = heightScott + 5 * ageScott; //Take note of the calculation
-/*
+
 if (scoreChris > scoreScott) {
     console.log('Chris wins the game with ' + scoreChris + ' points!');
 } else if (scoreScott > scoreChris) {
@@ -132,7 +132,6 @@ if (scoreChris > scoreScott) {
     console.log('There is a draw!');
 }
 
-*/
 
 var heightMerelice = 162;
 var ageMerelice = 41;
@@ -152,3 +151,37 @@ if (scoreChris > scoreScott && scoreChris > scoreMerelice) {
 }
 
 //Take note of how to do the calculation of the third party versus only that of two players.
+
+
+///////Functions
+
+function calculateAge(yearOfBirth) {
+    var age = 2017 - yearOfBirth;
+    return age;
+}
+
+var ageScott = calculateAge(1976);
+var ageMerelice = calculateAge(1976);
+var ageDave = calculateAge(1949);
+var ageJoyce = calculateAge(1954);
+
+
+function yearsUntilRetirement(name, year) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if (retirement >= 0) {
+        console.log(name + ' retires in ' + retirement + ' years.');
+    }   else {
+        console.log(name + ' is already retired.');
+    }
+
+}
+
+yearsUntilRetirement('Dave', 1949);
+yearsUntilRetirement('Scott', 1976);
+yearsUntilRetirement('Joyce', 1954);
+yearsUntilRetirement('Merelice', 1976);
+
+*/
+
