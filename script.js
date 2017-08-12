@@ -183,5 +183,30 @@ yearsUntilRetirement('Scott', 1976);
 yearsUntilRetirement('Joyce', 1954);
 yearsUntilRetirement('Merelice', 1976);
 
+
+
+
+//////Statement and Expressions
+
+function someFun(par) {
+    //code
+}
+
+var someFun = function(par) {
+    //code
+}
+
+//expressions
+3 + 4;
+var x = 3;
+
+//statements
+if (x === 5) {
+    //do something
+}
+
+
 */
+
+
 
