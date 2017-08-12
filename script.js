@@ -206,7 +206,32 @@ if (x === 5) {
 }
 
 
+
+
+/////Lecture: Array
+
+var names = ['John', 'Jane', 'Mark'];
+
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[0]);//calling from an array starts from 0
+names[1] = 'Ben';
+console.log(names);
+
+var john = ['John', 'Smith', 1990, 'designer', false];
+
+john.push('blue'); //adds to the end
+john.unshift('Mr.'); //adds to the beginning
+john.pop(); //removes one from the end
+john.shift(); //removes one from the beginning
+
+console.log(john);
+
+if (john.indexOf('teacher') === -1) {
+    console.log('John is NOT a teacher.');
+}
+
 */
 
-
+///////Lecture: Objects
 
