@@ -231,7 +231,7 @@ if (john.indexOf('teacher') === -1) {
     console.log('John is NOT a teacher.');
 }
 
-*/
+
 
 ///////Lecture: Objects
 
@@ -242,6 +242,8 @@ var john = {
     job: 'teacher',
     isMarried: false
 };
+
+
 
 console.log(john.lastName);
 console.log(john['lastName']);
@@ -266,6 +268,58 @@ jane['job'] = 'retired';
 jane['isMarried'] = true;
 
 console.log(jane);
+
+*/
+
+/////////Lecture: Methods
+
+
+///version one
+/*
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: '1990',
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function() {
+        return 2017 - this.yearOfBirth;//"this" refers to the current object oj "john"
+    }
+};
+
+
+//console.log(john.calculateAge(1990));
+console.log(john.calculateAge());
+
+var age = john.calculateAge();
+john.age = age;
+
+console.log(john);
+
+*/
+
+
+
+
+//version two
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: '1990',
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function() {
+        //return 2017 - this.yearOfBirth;//"this" refers to the current object of "john"
+        this.age = 2017 - this.yearOfBirth;
+    }
+};
+
+john.calculateAge();
+
+console.log(john);
+
 
 
 
