@@ -175,7 +175,64 @@ if (scoreChris > scoreScott && scoreChris > scoreMerelice) {
 //Practice coding challenge
 
 /*
+John and a friend invented a simple game where the player with the highest value of his height (in centimeters) plus five times his age wins.
+
+1. Create variable for the heights and ages of two friends and assign them some values.
+
+2. Calculate their scores
+
+3. Decide who wins and print the winner to the console. Include the score in the string that you output to the console. Don't forget that there can be a draw.
+
+4. EXTRA: Add a third player and now decide who wins. Hint: you will need the && operator to make the decision.
+*/
+/*
+John's height = 161 centimeters
+John's age = 56
+
+Paul's height = 191 centimeters
+Paul's age = 44
+
+Matt's height = 183 centimeters
+Matt's age = 32
+
+var heightOfJohn = 140;
+var heightOfPaul = 140;
+var heightOfMatt = 140;
+
+var ageOfJohn = 56;
+var ageOfPaul = 56;
+var ageOfMatt = 56;
+
+var scoreOfJohn = heightOfJohn + 5 * ageOfJohn;
+var scoreOfPaul = heightOfPaul + 5 * ageOfPaul;
+var scoreOfMatt = heightOfMatt + 5 * ageOfMatt;
+
+console.log(scoreOfJohn)
+console.log(scoreOfPaul)
+console.log(scoreOfMatt)
+
+if (scoreOfJohn > scoreOfPaul && scoreOfJohn > scoreOfMatt) {
+    console.log('John wins the game with ' + scoreOfJohn + ' points!');
+
+} else if (scoreOfPaul > scoreOfJohn && scoreOfPaul > scoreOfMatt) {
+    console.log('Paul wins the game with ' + scoreOfPaul + ' points');
+
+} else if (scoreOfMatt > scoreOfJohn && scoreOfMatt > scoreOfPaul) {
+    console.log('Matt wins the game with ' + scoreOfMatt + ' points');
+
+} else {
+    console.log('The game is a draw!')
+}
+
+*/
+
+
+
+
+
+/*
 ///////Functions
+
 
 function calculateAge(yearOfBirth) {
     var age = 2017 - yearOfBirth;
