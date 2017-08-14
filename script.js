@@ -110,20 +110,39 @@ switch (job) {
     default:
         console.log('Scott does something else');
            }
-           
-
+         
+*/
 
 //Coding Challenge 1
 
+/*
+John and a friend invented a simple game where the player with the highest value of his height (in centimeters) plus five times his age wins.
 
+1. Create variable for the heights and ages of two friends and assign them some values.
+
+2. Calculate their scores
+
+3. Decide who wins and print the winner to the console. Include the score in the string that you output to the console. Don't forget that there can be a draw.
+
+4. EXTRA: Add a third player and now decide who wins. Hint: you will need the && operator to make the decision. 
+*/
+
+
+
+/*
+//There will be three friends; Chris, Scott, and Merelice.
+
+//We have two variable that we must declare, height and age. We will do this as var height.. and var age.. 
 var heightChris = 175; //for this game, the variables have to be set to clearly define them.
 var heightScott = 182;
 var ageChris = 39;
 var ageScott = 41;
 
+
+//Next, we set up a simple variable for score. We will reference each name in our score. the varialble will look as follows. var scoreName =
 var scoreChris = heightChris + 5 * ageChris; // to calculate the score we have created a var of scoreName.
 var scoreScott = heightScott + 5 * ageScott; //Take note of the calculation
-
+//Calculation. Here we use an if/else if/ else statement to create our calculation. We must console.log a message to our console.
 if (scoreChris > scoreScott) {
     console.log('Chris wins the game with ' + scoreChris + ' points!');
 } else if (scoreScott > scoreChris) {
@@ -136,9 +155,9 @@ if (scoreChris > scoreScott) {
 var heightMerelice = 162;
 var ageMerelice = 41;
 var scoreMerelice = heightMerelice + 5 * ageMerelice;
-
+//Here we do the calculation for the third party and it goes as follows. If person A is greater than person B && person A is greater than person C then console.log some winning message.
 if (scoreChris > scoreScott && scoreChris > scoreMerelice) {
-    console.loge('Chris wins the game with ' + scoreChris + ' points!');
+    console.log('Chris wins the game with ' + scoreChris + ' points!');
 
 } else if (scoreScott > scoreChris && scoreScott > scoreMerelice) {
     console.log('Scott wins the game with ' + scoreScott + ' points!');
@@ -151,8 +170,11 @@ if (scoreChris > scoreScott && scoreChris > scoreMerelice) {
 }
 
 //Take note of how to do the calculation of the third party versus only that of two players.
+*/
 
+//Practice coding challenge
 
+/*
 ///////Functions
 
 function calculateAge(yearOfBirth) {
