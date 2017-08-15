@@ -376,7 +376,6 @@ john.age = age;
 
 console.log(john);
 
-*/
 
 
 
@@ -401,6 +400,54 @@ console.log(john);
 
 
 
+
+/////////Lectures Loops
+
+//starting a loop with a counter which is variable i
+for (var i = 0; i < 100; i++) {
+    console.log(i);
+}
+// i starts at 0. We declared that it is less than 10. i++ will count from 0 up to 9.
+
+var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
+
+for (var i = 0; i < names.length; i++){
+    console.log(names[i]);
+}
+
+////names.length will give the total length
+
+for ( var i = names.length - 1; i >= 0; i--)
+{
+    console.log(names[i]);
+}
+
+
+var i = 0;
+while (i < names.length) {
+    console.log(names[i]);
+    i++
+}
+
+for ( var i = 0; i <= 5; i++) {
+    console.log(i);
+
+    if (i === 3) {
+        break;
+    }
+}
+
+
+
+for (var i = 0; i <= 5; i++) {
+    if (i === 3) {
+        continue;
+    }
+
+    console.log(i);
+}
+
+*/
 
 
 
